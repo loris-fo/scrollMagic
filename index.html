@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>ScrollMagic!</title>
+    <title>lol</title>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
@@ -44,17 +44,17 @@
       $(function() {
         controller = new ScrollMagic();
 
-
+        // Change background to red
         var changeToRed = TweenMax.to('#block', 0.5, {
           backgroundColor: 'red',
           color: 'white'
         });
 
-
+        // Apply this change when the trigger is in #container
 
         var whenInContainer = new ScrollScene({
           triggerElement: '#container'
-        });
+        })
         .setTween(changeToRed)
         .addTo(controller)
         .addIndicators();
